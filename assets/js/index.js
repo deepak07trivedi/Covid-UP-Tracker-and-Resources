@@ -156,21 +156,15 @@ function fetchData() {
    
    document.getElementById('containercard').innerHTML += `<div id="card1">
                                                               <h2>
-                                                              Confirmed Positive today in ${city} are 
-                                                              <br>
-                                                              <br>${da[date].UP.districts[city].delta.confirmed}</h2>
+                                                              Confirmed Positive today in ${city} are ${da[date].UP.districts[city].delta.confirmed}</h2>
                                                               </div>
                                                               <div id="card2">
                                                               <h2>
-                                                              Deceased agianst covid in ${city} are 
-                                                              <br>
-                                                              <br>${da[date].UP.districts[city].delta.deceased}</h2>
+                                                              Deceased agianst covid in ${city} are ${da[date].UP.districts[city].delta.deceased}</h2>
                                                               </div>
                                                               <div id="card3">
                                                               <h2>
-                                                              Recovered against covid in ${city} are
-                                                              <br>    
-                                                              <br>${da[date].UP.districts[city].delta.recovered}</h2>
+                                                              Recovered against covid in ${city} are ${da[date].UP.districts[city].delta.recovered}</h2>
                                                               </div>`;
 	 
   })
